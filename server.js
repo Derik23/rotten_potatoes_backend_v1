@@ -10,11 +10,10 @@ app.use(cors());
 app.use(express.json());
 
 const db = new pg.Pool({
-  user: "postgres",
-  host: "localhost",
-  database: "postgres",
-  password: "123",
-  port: 5432,
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false, // necessário para alguns bancos no Railway
+  },
 });
 
 const imdbList = [
