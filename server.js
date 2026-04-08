@@ -1,3 +1,5 @@
+console.log('OMDB_API_KEY:', process.env.OMDB_API_KEY);
+
 import express from "express";
 import cors from "cors";
 import pg from "pg";
