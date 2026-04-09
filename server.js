@@ -12,7 +12,7 @@ app.use(express.json());
 const db = new pg.Pool({
   host: process.env.DB_HOST,       // host do Render
   port: process.env.DB_PORT,       // porta do banco
-  user: process.env.DB_USER,       // usuário do banco
+  user: process.env.DB_USERNAME,       // usuário do banco
   password: process.env.DB_PASSWORD, // senha do banco
   database: process.env.DB_NAME,   // nome do banco
   ssl: {
