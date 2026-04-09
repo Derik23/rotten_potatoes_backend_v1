@@ -20,6 +20,15 @@ const db = new pg.Pool({
   }
 });
 
+db.connect()
+  .then(client => {
+    console.log('Conectado ao banco com sucesso!');
+    client.release();
+  })
+  .catch(err => {
+    console.error('Erro ao conectar no banco:', err);
+  });
+
 const imdbList = [
   "tt0372784", // Batman Begins
   "tt1375666", // Inception
