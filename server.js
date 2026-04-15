@@ -30,6 +30,7 @@ db.connect()
   });
 
 const imdbList = [
+  "tt0145487", // Spider-Man
   "tt0372784", // Batman Begins
   "tt1375666", // Inception
   "tt0133093", // The Matrix
@@ -43,13 +44,10 @@ const imdbList = [
   "tt0120586", // American History X
   "tt0114369", // Se7en
   "tt0110912", // Pulp Fiction
-  "tt0120689", // The Green Mile
   "tt0172495", // Gladiator
   "tt0120338", // Titanic
   "tt0848228", // The Avengers
-  "tt7286456", // Joker
-  "tt0468569", // The Dark Knight
-  "tt9362722", // Spider-Man: Across the Spider-Verse
+  "tt7286456" // Joker
 ];
 
 app.get("/loadMovies", async (req, res) => {
