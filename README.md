@@ -1,0 +1,1 @@
+Backend desenvolvido com Node.js e Express, utilizando PostgreSQL para persistência de dados. Atua como camada intermediária entre o frontend e a API da OMDb, garantindo segurança da chave da API. O banco de dados é executado em container Docker para padronização do ambiente.
